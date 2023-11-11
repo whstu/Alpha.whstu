@@ -1,0 +1,108 @@
+.hzhb .main { border-bottom: none; }
+.hzhb ul.gfzzs_lists{
+    font-size: 0;  text-align: center;
+}
+.hzhb ul.gfzzs_lists li {
+    text-align: center;  overflow: hidden;  background: #fff;  margin-right: 19px;  margin-bottom: 16px;  display: inline-block;
+    *display: inline;  *zoom: 1;
+}
+.hzhb ul.gfzzs_lists li img {  width: 100px;  }
+
+.all_zzs img{  display: block;  width: 14.7%;  margin: 0 auto 3.9%;  }
+.hzhb-line{width: 100%;border-bottom: 1px solid #d4d4d4;}
+
+.nav_cont_sec .nav_title span{font-size:28px;}
+.nav_cont_sec .nav_tits li{font-size:20px;}
+
+@media screen and (max-width: 1600px){
+    .nav_cont_sec .nav_title span{font-size:26px;}
+    .nav_cont_sec .nav_tits li{font-size:18px;}
+}
+@media screen and (max-width: 1400px){
+    .nav_cont_sec .nav_title span{font-size:24px;}
+}
+.logo_box{width:21%;}
+.ss_2022_btn a{display: block;width: 100%;height: 100%;}
+
+/* 20220408 */
+.nav_cont_sec .nav_title span {font-size: 28px;color: #282828;}
+.nav_cont_sec .nav_tits li {font-size: 20px; color: #686868;}
+.top_nav ul li { /*font-size: 17px;*/color: #282828;}
+.zx-tt h2 {color: #282828;font-size:48px;}
+ul.zx-tt-lists li a {line-height: 30px;color: #282828;font-size: 22px;}
+.cszc .cszc_sec .cszc_conts .cszc_item .cszc_head .cont .tit {font-size: 28px;}
+.cszc .cszc_sec .cszc_conts .cszc_item .cszc_head .cont .hint {font-size: 16px;}
+.cszc .cszc_sec .cszc_conts .cszc_item .cszc_lists li {font-size: 22px;}
+.text-item {font-size: 22px;}
+
+
+.cszc .cszc_sec .cszc_conts {background: #3e55ee;}
+.text-item::before {display: block;content: ""; background: url(https://www.hangzhou2022.cn/images/03yywh_line.png) no-repeat left center; width: 2px; height: 0px;position: absolute;left: 0;top: 0; background-size: 100% 100%;}
+.text-item:hover::before {height: 100%;transition: 0.2s all linear;}
+
+@media screen and (max-width:1600px) {
+    .nav_cont_sec .nav_title span {  font-size: 23px;  }
+    .nav_cont_sec .nav_tits li {  font-size: 17px;  }
+    .top_nav ul li {  /*font-size: 14px; */ }
+    .zx-tt h2 {  font-size: 40px;  line-height: 50px;  }
+    ul.zx-tt-lists li a {  line-height: 28px;  font-size: 18px;  }
+    .cszc .cszc_sec .cszc_conts .cszc_item .cszc_head .cont .tit {  font-size: 23px;  }
+    .cszc .cszc_sec .cszc_conts .cszc_item .cszc_head .cont .hint {  font-size: 14px;  }
+    .cszc .cszc_sec .cszc_conts .cszc_item .cszc_lists li {  font-size: 18px  }
+    .text-item {  font-size: 18px;  }
+}
+
+@media screen and (max-width:1400px) {
+    .nav_cont_sec .nav_title span {  font-size: 20px;  }
+    .nav_cont_sec .nav_tits li {  font-size: 15px;  }
+    .top_nav ul li { /* font-size: 12px; */ }
+    .zx-tt h2 {  font-size: 35px;  line-height: 45px;  }
+    ul.zx-tt-lists li a {  line-height: 26px;  font-size: 16px;  }
+
+    .cszc .cszc_sec .cszc_conts .cszc_item .cszc_head .cont .tit {  font-size: 20px;  }
+    .cszc .cszc_sec .cszc_conts .cszc_item .cszc_head .cont .hint {  font-size: 12px;  }
+    .cszc .cszc_sec .cszc_conts .cszc_item .cszc_lists li {  font-size: 16px  }
+    .text-item {  font-size: 16px;  }
+}
+
+/* 20220412 */
+
+.lm-more1{display: block;width: 20%;margin: 3.5% auto 0;height: auto;}
+.lm-more1 img {display: block;width: 100%;margin: 0;height: auto;}
+.all_zzs{display: block;width: 14.7%;margin: 0 auto 3.9%;}
+.all_zzs img {display: block;width: 100%;margin: 0;height: auto;}
+
+/* 20220413 */
+
+
+.zx-tt h2 {  margin:0 auto 2%;  width: 100%;  overflow: none;  white-space:normal;  }
+.logo_box{top:9%;height:82%;}
+
+
+.zx-tt h2 a:hover,ul.zx-tt-lists li a:hover,.swiper-zx-bottom-slide-left .swiper-zx-bottom-slide-text h2 a:hover,.swiper-zx-bottom-slide-right-item .swiper-zx-bottom-slide-text h2 a:hover,.sp-item-title:hover,.ss-cg-top-text-box:hover h2 a,.ss-cg-swiper .swiper-slide:hover p,.fw_lists .fw_list .back.jd .jd_lists li a:hover{color: #2a2eae;}
+
+/* 20220421 */
+.hzhb ul.txjy_lists li {width: 184px;height: 100px;margin-right: 40px;display: inline-block;*display: inline;*zoom: 1;}
+.hzhb ul.txjy_lists li img {width: 184px;height: 100px;}
+
+.footer {background: url(https://www.hangzhou2022.cn/images/04footer.jpg) no-repeat center bottom;color: #282828;height: 484px;padding-top: 60px;}
+.footer_lf_bottom{margin-top: 100px;}
+.footer_lf_bottom p{text-align: right;font-size: 12px;line-height: 30px;color: #929292;}
+.footer_lf_bottom a{color: #929292;}
+.footer .sjmt_box{width: 360px;margin-right: -90px;margin-top: 45px;float: left;height: 50px;position: relative;}
+.footer .sjmt_box .sjmt_tb{height: 50px;float: left;}
+.footer .sjmt_box .sjmt_tb img{/*margin-right: 14px;cursor: pointer;*/position: absolute;top: 0;left: 0;}
+.footer .sjmt_box .sjmt_tb div{position: relative;width: 50px;height: 50px;float: left;margin-right: 14px;cursor: pointer;}
+.footer .sjmt_box .sjmt_tb img.sjmt_tb_img2{display: none;}
+.footer .sjmt_box .sjmt_tb div:hover img.sjmt_tb_img1{display: none;}
+.footer .sjmt_box .sjmt_tb div:hover img.sjmt_tb_img2{display: block;}
+/* 20220425 */
+.all_zzs{display: block;width: 100%;margin: 0 auto 3.9%;text-align: center;font-size: 0;}
+.all_zzs img {display: block;width: 100%;margin: 0;height: auto;}
+.hzhb-qbzzqy,.hzhb-swfw{display: inline-block;*display: inline;*zoom: 1;width: 14.75%;margin: 0 2%;}
+
+ul.zx-tt-lists li:first-child span{background:#1b22a6;}
+/* 20230131 */
+.nav_btn_sec a{line-height:24px;}
+.hzhb ul.gfhzhb_lists{ text-align: center;}
+.hzhb ul.gfhzhb_lists li{float:none;display:inline-block;margin-right:30px;}

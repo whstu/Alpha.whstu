@@ -1,0 +1,69 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <link rel="stylesheet" type="text/css" href="styles.css">  
+</head>  
+<body>  
+  <div class="search-container">  
+    <input type="text" placeholder="搜索歌曲或作者" id="search-input">  
+    <button onclick="searchSongs()">搜索</button>  
+  </div>  
+  <div class="song-list">  
+    <div class="song-item">  
+      <h3>同爱同在（2022 杭州亚运会曲目）</h3>
+      <p>孙楠</p>
+      <button onclick="window.open('./music/tongaitongzai.mp3')">立即下载</button>
+    </div>
+    <div class="song-item">
+      <h3>罗刹海市</h3>
+      <p>刀郎</p>
+      <button onclick="window.open('./music/luochahaishi.mp3')">立即下载</button>
+    </div>
+    <div class="song-item">
+      <h3>亚细亚（群星合唱）（2022 杭州亚运会曲目）</h3>
+      <p>郭峰</p>
+      <button onclick="window.open('./music/asia.mp3')">立即下载</button>
+    </div>
+    <!-- 添加更多歌曲 -->  
+  </div>  
+  <script>  
+    function searchSongs() {  
+      var searchInput = document.getElementById("search-input");  
+      var searchTerm = searchInput.value.trim();  
+      var songItems = document.getElementsByClassName("song-item");  
+      var matchingSongs = [];  
+  
+      if (searchTerm === "") {  
+        // 如果搜索框为空，显示所有歌曲  
+        for (var i = 0; i < songItems.length; i++) {  
+          matchingSongs.push(songItems[i]);  
+        }  
+      } else {  
+        // 如果搜索框不为空，根据搜索词匹配歌曲和歌曲作者，选择其中之一作为匹配的歌曲（如果有的话）  
+        for (var i = 0; i < songItems.length; i++) {  
+          var songTitle = songItems[i].getElementsByTagName("h3")[0].innerText;  
+          var songAuthor = songItems[i].getElementsByTagName("p")[0].innerText;  
+          if (songTitle.includes(searchTerm) || songAuthor.includes(searchTerm)) {  
+            matchingSongs.push(songItems[i]);  
+          }  
+        }  
+      }  
+  
+      // 隐藏所有歌曲，显示匹配的歌曲（如果有的话）  
+      for (var i = 0; i < songItems.length; i++) {  
+        songItems[i].style.display = "none";  
+      }  
+      for (var i = 0; i < matchingSongs.length; i++) {  
+        matchingSongs[i].style.display = "block";  
+      }  
+    }  
+  
+    // 监听键盘回车事件  
+    document.addEventListener("keydown", function(event) {  
+      if (event.key === "Enter") {  
+        searchSongs(); // 调用搜索函数  
+      }  
+    });  
+  </script>  
+</body>  
+</html>

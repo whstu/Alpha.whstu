@@ -1,0 +1,99 @@
+a {
+  color: #ee7804;
+}
+
+.glass{
+    background:linear-gradient(35deg, #f8f8f800 -38%, #ffffff20);
+    border:1px solid #ffffff29;
+    border-radius:10px;
+    padding:40px 20px;
+}
+.glass-outer{
+    padding:15px;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem #ee780455;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #ee7804;
+  border-color: #ee7804;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.btn-default:focus, .btn-default:hover {
+  color: #000;
+  border: 1px solid #ee7804;
+  outline: none;
+  background-color: #ee7804;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 .2rem #ee780455;
+}
+
+.btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
+  color: #212529;
+  background-color: #ee7804;
+  border-color: #ee7804;
+}
+
+.btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 .2rem #ee780455;
+}
+
+.btn:hover {
+  color: #212529;
+  text-decoration: none;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.btn-default {
+  color: #ee7804;
+  border: 1px solid #ee7804;
+  background-color: transparent;
+}
+
+.btn {
+  font-family: Cabin,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  transition: all .3s ease-in-out;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+.btn-group-lg > .btn, .btn-lg {
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: .3rem;
+}
+
+.btn-primary {
+  color: #212529;
+  background-color: #ee7804;
+  border-color: #ee7804;
+}
+
+body, footer {
+  background-color: #1c1348;
+}
+
+section {
+  background-color: #1c1348;
+}
+

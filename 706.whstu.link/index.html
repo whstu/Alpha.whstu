@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Embedding README.md</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div id="readme-content"></div>
+
+  <script>
+    fetch('./index.md')
+      .then(response => response.text())
+      .then(markdownContent => {
+        const htmlContent = marked(markdownContent);
+
+        document.getElementById('readme-content').innerHTML = htmlContent;
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  </script>
+</body>
+</html>

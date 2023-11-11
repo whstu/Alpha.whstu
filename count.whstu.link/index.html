@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>倒计时网站</title>
+  <style>
+    body {
+      background-color: #f1f1f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .countdown {
+      width: 300px;
+      height: 180px;
+      position: relative;
+      text-align: center;
+      margin: 50px auto;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+    }
+
+    .cover {
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      opacity: 0.7;
+    }
+
+    .countdown-content {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #000;
+      text-align: center;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="countdown">
+    <div class="cover"></div>
+    <div class="countdown-content">
+      <p id="countdown"></p>
+    </div>
+  </div>
+
+  <script>
+    var countDownDate = new Date("Feb 2, 2024 12:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("countdown").innerHTML = "  距离学期结束还剩<br>"+"    " + days + "天 " + hours + "时 " + minutes + "分 " + seconds + "秒 ";
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "已经结束";
+        document.getElementsByClassName("countdown")[0].style.display = "none";
+        document.getElementsByClassName("cover")[0].style.display = "none";
+        document.body.style.backgroundColor = "#f1f1f1";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
